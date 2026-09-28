@@ -1,4 +1,5 @@
 import  java.util.ArrayList;
+import  java.util.Iterator;
 
 public class ArrayListDemoJ {
     public static void main(String[] args) {
@@ -10,6 +11,16 @@ public class ArrayListDemoJ {
         students.add("shreya");
         students.add("tanmay");
         students.add("rohit");
+
+        Iterator<String> it = students.iterator();
+        System.out.println("printing with Iterator");
+
+        while(it.hasNext()){
+            String st = it.next();
+            System.out.println(st);
+
+        }
+
 
         System.out.println(students);
 
